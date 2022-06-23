@@ -116,7 +116,7 @@ int controller_ordenarServicios(LinkedList* this)
 	if(this != NULL)
 	{
 		pFunc = Servicio_compararDescripcion;
-		retorno = ll_sort(this, pFunc, 1);
+		retorno = ll_sort(this, pFunc, 0);
 	}
 
 	return retorno;

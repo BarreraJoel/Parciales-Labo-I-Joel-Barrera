@@ -87,11 +87,12 @@ void Servicio_calcularTotal(void* element)
 
 int Servicio_filtrarPorTipoMinorista(void* element)
 {
-	int retorno = 0;
+	int retorno = -1;
 	int auxTipo;
 
 	if(element != NULL)
 	{
+		retorno = 0;
 		if(Servicio_getTipo(element, &auxTipo) == 0 && auxTipo == 1)
 		{
 			retorno = 1;
@@ -103,11 +104,12 @@ int Servicio_filtrarPorTipoMinorista(void* element)
 
 int Servicio_filtrarPorTipoMayorista(void* element)
 {
-	int retorno = 0;
+	int retorno = -1;
 	int auxTipo;
 
 	if(element != NULL)
 	{
+		retorno = 0;
 		if(Servicio_getTipo(element, &auxTipo) == 0 && auxTipo == 2)
 		{
 			retorno = 1;
@@ -119,11 +121,12 @@ int Servicio_filtrarPorTipoMayorista(void* element)
 
 int Servicio_filtrarPorTipoExportar(void* element)
 {
-	int retorno = 0;
+	int retorno = -1;
 	int auxTipo;
 
 	if(element != NULL)
 	{
+		retorno = 0;
 		if(Servicio_getTipo(element, &auxTipo) == 0 && auxTipo == 3)
 		{
 			retorno = 1;

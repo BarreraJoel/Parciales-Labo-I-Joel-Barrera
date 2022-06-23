@@ -92,7 +92,7 @@ int main(void)
 					{
 						if(controller_ordenarServicios(listaServicios) == 0)
 						{
-							printf("\n*** La lista se ordeno correctamente ***\n");
+							printf("\n*** La lista se ordeno correctamente ***\n\n");
 							controller_imprimirLista(listaServicios);
 							flagOpcionCinco = 1;
 						}

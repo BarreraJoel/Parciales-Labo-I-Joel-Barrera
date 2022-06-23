@@ -11,52 +11,58 @@
 #include "LinkedList.h"
 
 /**
- * @brief
+ * @brief Carga un archivo mediante una direccion pasada como parametro
  *
- * @param path
- * @param this
- * @return
+ * @param path Direccion del archivo a cargar
+ * @param this LinkedList donde se cargaran los datos
+ * @return (-1) Error: Lista NULL o path NULL
+ * 		   ( 1) OK
  */
 int controller_cargarArchivo(char* path, LinkedList* this);
 
 /**
- * @brief
+ * @brief Imprime la LinkedList
  *
- * @param this
- * @return
+ * @param this LinkedList a imprimir
+ * @return (-1) Error: Lista NULL
+ * 		   ( 1) OK
  */
 int controller_imprimirLista(LinkedList* this);
 
 /**
- * @brief
+ * @brief Asigna los precios totales de los servicios
  *
- * @param this
- * @return
+ * @param this LinkedList a la cual se le asignaran los valores totales
+ * @return (-1) Error: Lista NULL
+ * 		   ( 1) OK
  */
 int controller_asignarTotales(LinkedList* this);
 
 /**
- * @brief
+ * @brief Filtra una lista en base a condiciones
  *
- * @param this
- * @return
+ * @param this LinkedList que se filtrara
+ * @return (-1) Error: Lista NULL
+ * 		   ( 1) OK
  */
 int controller_filtrar(LinkedList* this);
 
 /**
- * @brief
+ * @brief Ordena la lista alfabeticamente y de forma ascendente
  *
- * @param this
- * @return
+ * @param this LinkedList a ordenar
+ * @return (-1) Error: Lista NULL
+ * 		   ( 1) OK
  */
 int controller_ordenarServicios(LinkedList* this);
 
 /**
- * @brief
+ * @brief Guarda los datos de la LinkedList en un archivo
  *
- * @param path
- * @param this
- * @return
+ * @param path Direccion del archivo donde se guardaran los datos
+ * @param this LinkedList donde se guardaran los datos
+ * @return (-1) Error: Lista NULL o path NULL
+ * 		   ( 1) OK
  */
 int controller_guardarArchivo(char* path, LinkedList* this);
 
